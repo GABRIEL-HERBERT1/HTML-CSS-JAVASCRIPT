@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, black);
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    background-color: #F2C230 ;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
+}
+
+.container{
+    display: flex;
+
+}
+
+.caixa{
+     background-color: #fff8dc;      
+      border: 1px solid #FFD700;      
+      padding: 5px;                  
+      width: 800px;    
+      border-radius: 8px; 
+      box-shadow: 2px 2px 2px #ccc;
+      
+       
+           
+      
+      
+}
+.destaque{
+    color: red;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.452);
+}
+p{
+    text-align: justify;
+}
