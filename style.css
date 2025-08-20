@@ -16,7 +16,7 @@ main{
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 1px 1px black;
-    width: 600px;
+    width: 600;
     padding: 2px;
     margin: auto;
 }
