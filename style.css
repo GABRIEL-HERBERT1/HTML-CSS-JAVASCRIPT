@@ -8,15 +8,17 @@ body{
     height: 100vh;
     background-image: url("hamburguergourmet-fb.jpg");
     background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     
 }
 
 main{
     background-color: white;
+    max-width: 600px;
     border-radius: 10px;
     box-shadow: 1px 1px 1px black;
-    width: 600;
     padding: 2px;
     margin: auto;
 }
