@@ -24,6 +24,12 @@ header{
     text-align: center;
 }
 
+
+h1{
+    text-align: center;
+}
+
+
 header nav a{
     color: red;
     margin: 0 15px;
