@@ -7,179 +7,321 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body> 
+   <header>
+      <h1>MaMg Lanches</h1>
+      <nav>
+         <a href="#menu">Cardápio</a>
+         <a href="#menu">Contato</a>
+      </nav>
+   </header>
      <main>
-      <div class="quadrado">
-
-      </div>
-    <h1>Mang Lanches</h1>
-   <h1 class="destaque">Hambúrguer Tradicionais</h1>
-   <div class="container">
-    <div class="caixa">
-   <h2>Misto Quente</h2>
-    <p>Pão + Presunto + Musarela.</p>
-   <h2>R$ 10,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-<h2>Hambúrguer</h2>
-   <p>Pão + Bife + Alface + Tomate + Batata Palha.</p>
-   <h2>R$ 14,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>X-Salada</h2>
-   <p>Pão + Bife + Presunto + Mussarela + Alface + Tomate + Batata Palha</p>
-   <h2>R$ 15,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>X-EGG</h2>
-   <P>Pão + Bife +  Ovo + Presunto + Mussarela + Alface + Tomate + Batata Palha.</P>
-   <h2>R$ 17,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>X-Calabresa</h2>
-   <p>Pão + Calabresa + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
-   <h2>R$ 18,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>X-Bacon</h2>
-   <p>Pão + Bife + Bacon + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
-   <h2>R$ 18,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>X-Tudo</h2>
-   <p>Pão + Bife + Ovo + Bacon + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
-   <h2>R$ 20,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>MaMg-Tudo</h2>
-   <p>Pão + 2 Bife + 2 Ovo + Bacon + Calabresa + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
-   <h2>R$ 25,00</h2></div></div>
-
-   <h1 class="destaque">Hambúrguer Artesanais</h1>
-   <div class="container">
-   <div class="caixa">
-   <h2>Hambúrguer Artesanal</h2>
-   <p>Pão + Bife Artesanal 150g + Alface + Tomate + Batata Palha.</p>
-   <h2>R$ 16,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>X-Salada Artesanal</h2>
-   <p>Pão + Bife Artesanal 150g + Presunto + Mussarela + Alface + Tomate + Batata Palha</p>
-   <h2>R$ 17,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>X-EGG Artesanal</h2>
-   <P>Pão + Bife Artesanal 150g +  Ovo + Presunto + Mussarela + Alface + Tomate + Batata Palha.</P>
-   <h2>R$ 19,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-    <h2>X-Bacon Artesanal</h2>
-   <p>Pão + Bife Artesanal 150g + Bacon + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
-   <h2>R$ 20,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>X-Tudo Artesanal</h2>
-   <p>Pão + Bife Artesanal 150g + Ovo + Bacon + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
-   <h2>R$ 22,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>MaMg-Tudo Artesanal</h2>
-   <p>Pão + 2 Bife Artesanal 150g + 2 Ovo + Bacon + Calabresa + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
-   <h2>R$ 27,00</h2></div></div>
+      <section id="menu" class="menu">
+            <h2>Nosso Cardápio</h2>
+             <div class="cardapio">
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Misto quente">
+                    <h3>Misto Quente</h3>
+                    <p>Pão + Presunto + Musarela.</p>
+                    <p>R$ 10,00</p>
+                    <button onclick="fazerPedido('mistoquente')">Pedir</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="hamburguer">
+                    <h3>Hambúrguer</h3>
+                    <p>Pão + Bife + Alface + Tomate + Batata Palha</p>
+                    <p>R$ 14,00</p>
+                    <button onclick="fazerPedido('hamburguer')">Pedir</button>
+                </div>
+                 
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="X-Salada">
+                    <h3>X-Salada</h3>
+                    <p>Pão + Bife + Presunto + Mussarela + Alface + Tomate + Batata Palha</p>
+                    <p>R$ 15,00</p>
+                    <button onclick="fazerPedido('X-Salada')">Pedir</button>
+                </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="X-EGG">
+                    <h3>X-EGG</h3>
+                    <p>Pão + Bife +  Ovo + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
+                    <p>R$ 17,00</p>
+                    <button onclick="fazerPedido('X-EGG')">Pedir</button>
+                </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="X-Calabresa">
+                    <h3>X-Calabresa</h3>
+                    <p>Pão + Calabresa + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
+                    <p>R$ 18,00</p>
+                    <button onclick="fazerPedido('X-Calabresa')">Pedir</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="X-Bacon">
+                    <h3>X-Bacon</h3>
+                    <p>Pão + Calabresa + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
+                    <p>R$ 18,00</p>
+                    <button onclick="fazerPedido('X-Bacon')">Pedir</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="X-Tudo">
+                    <h3>X-Tudo</h3>
+                    <p>Pão + Bife + Ovo + Bacon + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
+                    <p>R$ 20,00</p>
+                    <button onclick="fazerPedido('X-Tudo')">Pedir</button>
+                </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="MaMg-Tudo">
+                    <h3>MaMg-Tudo</h3>
+                    <p>Pão + 2 Bife + 2 Ovo + Bacon + Calabresa + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
+                    <p>R$ 25,00</p>
+                    <button onclick="fazerPedido('MaMg-Tudo')">Pedir</button>
+                </div>
+   <h1>Hambúrguer Artesanais</h1>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Hambúrguer Artesanal">
+                    <h3>Hambúrguer Artesanal</h3>
+                    <p>Pão + Bife Artesanal 150g + Alface + Tomate + Batata Palha.</p>
+                    <p>R$ 16,00</p>
+                    <button onclick="fazerPedido('Hambúrguer Artesanal')">Pedir</button>
+                </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="X-Salada Artesanal">
+                    <h3>X-Salada Artesanal</h3>
+                    <p>Pão + Bife Artesanal 150g + Presunto + Mussarela + Alface + Tomate + Batata Palha</p>
+                    <p>R$ 17,00</p>
+                    <button onclick="fazerPedido('X-Salada Artesanal')">Pedir</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="X-EGG Artesanal">
+                    <h3>X-EGG Artesanal</h3>
+                    <p>Pão + Bife Artesanal 150g +  Ovo + Presunto + Mussarela + Alface + Tomate + Batata Palha. </p>
+                    <p>R$ 19,00</p>
+                    <button onclick="fazerPedido('X-EGG Artesanal')">Pedir</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="X-Bacon Artesanal">
+                    <h3>X-Bacon Artesanal</h3>
+                    <p>Pão + Bife Artesanal 150g + Bacon + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
+                    <p>R$ 20,00</p>
+                    <button onclick="fazerPedido('X-Bacon Artesanal')">Pedir</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="X-Tudo Artesanal">
+                    <h3>X-Tudo Artesanal</h3>
+                    <p>Pão + Bife Artesanal 150g + Ovo + Bacon + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
+                    <p>R$ 22,00</p>
+                    <button onclick="fazerPedido('X-Tudo Artesanal')">Pedir</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="MaMg-Tudo Artesanal">
+                    <h3>MaMg-Tudo Artesanal</h3>
+                    <p>Pão + 2 Bife Artesanal 150g + 2 Ovo + Bacon + Calabresa + Presunto + Mussarela + Alface + Tomate + Batata Palha. </p>
+                    <p>R$ 27,00</p>
+                    <button onclick="fazerPedido('MaMg-Tudo Artesanal')">Pedir</button>
+                </div>
    <h1 class="destaque">Hambúrguer Picanha</h1>
-   <div class="container">
-   <div class="caixa">
-   <h2>Hambúrguer Picanha</h2>
-   <p>Pão + Picanha 90g + Alface + Tomate + Batata Palha.</p>
-   <h2>R$ 22,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>X-Salada Picanha</h2>
-   <p>Pão + Picanha 90g + Presunto + Mussarela + Alface + Tomate + Batata Palha</p>
-   <h2>R$ 24,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>X-EGG Picanha</h2>
-   <P>Pão + Picanha 90g +  Ovo + Presunto + Mussarela + Alface + Tomate + Batata Palha.</P>
-   <h2>R$ 26,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-    <h2>X-Bacon Picanha</h2>
-   <p>Pão + Picanha 90g + Bacon + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
-   <h2>R$ 28,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-    <h2>X-Tudo Picanha</h2>
-   <p>Pão + Bife Artesanal 150g + Ovo + Bacon + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
-   <h2>R$ 32,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>MaMg-Tudo Picanha</h2>
-   <p>Pão + Picanha 150g + 2 Ovo + Bacon + Calabresa + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
-   <h2>R$ 35,00</h2></div></div>
-
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Hambúrguer Picanha">
+                    <h3>Hambúrguer Picanha</h3>
+                    <p>Pão + Picanha 90g + Alface + Tomate + Batata Palha.</p>
+                    <p>R$ 22,00</p>
+                    <button onclick="fazerPedido('Hambúrguer Picanha')">Pedir</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="X-Salada Picanha">
+                    <h3>X-Salada Picanha</h3>
+                    <p>Pão + Picanha 90g + Presunto + Mussarela + Alface + Tomate + Batata Palha</p>
+                    <p>R$ 24,00</p>
+                    <button onclick="fazerPedido('X-Salada Picanha')">Pedir</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="X-EGG Picanha">
+                    <h3>X-EGG Picanha</h3>
+                    <p>Pão + Picanha 90g + Ovo + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
+                    <p>R$ 26,00</p>
+                    <button onclick="fazerPedido('X-EGG Picanha')">Pedir</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="X-Bacon Picanha">
+                    <h3>X-Bacon Picanha</h3>
+                    <p>Pão + Picanha 90g + Bacon + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
+                    <p>R$ 28,00</p>
+                    <button onclick="fazerPedido('X-Bacon Picanha')">Pedir</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="X-Tudo Picanha">
+                    <h3>X-Tudo Picanha</h3>
+                    <p>Pão + Bife Artesanal 150g + Ovo + Bacon + Presunto + Mussarela + Alface + Tomate + Batata Palha. </p>
+                    <p>R$ 32,00</p>
+                    <button onclick="fazerPedido('X-Tudo Picanha')">Pedir</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="MaMg-Tudo Picanha">
+                    <h3>MaMg-Tudo Picanha</h3>
+                    <p>Pão + Picanha 150g + 2 Ovo + Bacon + Calabresa + Presunto + Mussarela + Alface + Tomate + Batata Palha.</p>
+                    <p>R$ 35,00</p>
+                    <button onclick="fazerPedido('MaMg-Tudo Picanha')">Pedir</button>
+                </div>
    <h1 class="destaque">Cachorro Quente</h1>
-   <div class="container">
-   <div class="caixa">
-   <h2>Cachorro-Quente-Tradicional</h2>
-   <p>Pão + Salsicha + Milho + Ovo de Codorna + Queijo Ralado + Batata Palha</p>
-   <h2>R$ 12,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>Cachorro-Quente-Duplo</h2>
-   <p>Pão + 2 Salsicha + Milho + Ovo de Codorna + Queijo Ralado + Batata Palha</p>
-   <h2>R$ 14,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>Cachorro-Quente-Triplo</h2>
-   <p>Pão + 3 Salsicha + Milho + Ovo de Codorna + Queijo Ralado + Batata Palha</p>
-   <h2>R$ 16,00</h2></div></div>
+   <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Cachorro-Quente-Tradicional">
+                    <h3>Cachorro-Quente-Tradicional</h3>
+                    <p>Pão + Salsicha + Milho + Ovo de Codorna + Queijo Ralado + Batata Palha</p>
+                    <p>R$ 12,00</p>
+                    <button onclick="fazerPedido('Cachorro-Quente-Tradicional')">Pedir</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Cachorro-Quente-Duplo">
+                    <h3>Cachorro-Quente-Duplo</h3>
+                    <p>Pão + 2 Salsicha + Milho + Ovo de Codorna + Queijo Ralado + Batata Palha</p>
+                    <p>R$ 14,00</p>
+                    <button onclick="fazerPedido('Cachorro-Quente-Duplo')">Pedir</button>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Cachorro-Quente-Triplo">
+                    <h3>Cachorro-Quente-Triplo</h3>
+                    <p>Pão + 3 Salsicha + Milho + Ovo de Codorna + Queijo Ralado + Batata Palha</p>
+                    <p>R$ 16,00</p>
+                    <button onclick="fazerPedido('Cachorro-Quente-Triplo')">Pedir</button>
+                </div>
 
+  
    <h1 class="destaque">Refrigerantes</h1>
-   <div class="container">
-   <div class="caixa">
-   <h2>Coca-Cola 600ml</h2>
-   <p>Garrafa 600ml</p>
-   <h2>R$ 8,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>Fanta Uva 600ml</h2>
-   <p>Garrafa 600ml</p>
-   <h2>R$ 8,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>Fanta Laranja 600ml</h2>
-   <p>Garrafa 600ml</p>
-   <h2>R$ 8,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>Coca-Cola 1L</h2> 
-   <P>Garrafa 1L</P>  
-   <h2>R$ 10,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>Guaraná Antarctica 1L</h2>
-   <P>Garrafa de 1L</P>
-   <h2>R$ 10,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>Coca-Cola 2L</h2>
-   <P>Garrafa 2L</P>
-   <h2>R$ 14,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>Fanta Uva 2L</h2>
-   <P>Garrafa de 2L</P>
-   <h2>R$ 14,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>Fanta Laranja 2L</h2>
-   <p>Garrafa 2L</p>
-   <h2>R$ 14,00</h2></div></div>
-   <div class="container">
-   <div class="caixa">
-   <h2>Guaraná Antarctica 2L</h2>
-   <p>Garrafa 2L</p>
-   <h2>R$ 14,00</h2></div></div>
-   </main>
+    <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Coca-Cola 600ml">
+                    <h3>Coca-Cola 600ml</h3>
+                    <p>Garrafa 600ml</p>
+                    <p>R$ 8,00</p>
+                    <button onclick="fazerPedido('Coca-Cola 600ml')">Pedir</button>
+                </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Fanta Uva 600ml">
+                    <h3>Fanta Uva 600ml</h3>
+                    <p>Garrafa 600ml</p>
+                    <p>R$ 8,00</p>
+                    <button onclick="fazerPedido('Fanta Uva 600ml')">Pedir</button>
+                </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Fanta Laranja 600ml">
+                    <h3>Fanta Laranja 600ml</h3>
+                    <p>Garrafa 600ml</p>
+                    <p>R$ 8,00</p>
+                    <button onclick="fazerPedido('Fanta Laranja 600ml')">Pedir</button>
+                </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Coca-Cola 1L">
+                    <h3>Coca-Cola 1L</h3>
+                    <p>Garrafa 1L</p>
+                    <p>R$ 10,00</p>
+                    <button onclick="fazerPedido('Cachorro-Quente-Triplo')">Pedir</button>
+                </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Guaraná Antarctica 1L">
+                    <h3>Guaraná Antarctica 1L</h3>
+                    <p>Garrafa 1L</p>
+                    <p>R$ 10,00</p>
+                    <button onclick="fazerPedido('Guaraná Antarctica 1L')">Pedir</button>
+                </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Coca-Cola 2L">
+                    <h3>Coca-Cola 2L</h3>
+                    <p>Garrafa 2L</p>
+                    <p>R$ 14,00</p>
+                    <button onclick="fazerPedido('Coca-Cola 2L')">Pedir</button>
+                </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Fanta Uva 2L">
+                    <h3>Fanta Uva 2L</h3>
+                    <p>Garrafa 2L</p>
+                    <p>R$ 14,00</p>
+                    <button onclick="fazerPedido('Fanta Uva 2L')">Pedir</button>
+                </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Fanta Laranja 2L">
+                    <h3>Fanta Laranja 2L</h3>
+                    <p>Garrafa 2L</p>
+                    <p>R$ 14,00</p>
+                    <button onclick="fazerPedido('Fanta Laranja 2L')">Pedir</button>
+                </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/200x150" alt="Guaraná Antarctica 2L">
+                    <h3>Guaraná Antarctica 2L</h3>
+                    <p>Garrafa 2L</p>
+                    <p>R$ 14,00</p>
+                    <button onclick="fazerPedido('Guaraná Antarctica 2L')">Pedir</button>
+                </div>
+            </div>
+      </section>
+      <section id="contato" class="contato">
+         <h2>Contato</h2>
+         <p>Telefone:(32)98835-3163</p>
+      </section>
+      <section id="pedido" class="pedido">
+         <h2>Faça seu pedido</h2>
+         <form id="form-pedido">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="endereco">Endereço para entrega:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="hamburguer">Escolha o Hambúrguer:</label>
+            <select id="hamburguer" name="hamburguer" required>
+               <option value="">Selecione</option>
+               <option value="Misto Quente">Misto Quente</option>
+                <option value="hamburguer">Hambúrguer</option>
+                 <option value="X-Salada">X-Salada</option>
+                  <option value="X-EGG">X-EGG</option>
+                   <option value="X-Calabresa">X-Calabresa</option>
+                   <option value="X-Bacon">X-Bacon</option>
+                    <option value="X-Tudo">X-Tudo</option>
+                     <option value="MaMg-Tudo">MaMg-Tudo</option>
+                      <option value="Hambúrguer Artesanal">Hambúrguer Artesanal</option>
+                       <option value="X-Salada Artesanal">X-Salada Artesanal</option>
+                        <option value="X-EGG Artesanal">X-EGG Artesanal</option>
+                         <option value="X-Bacon Artesanal">X-Bacon Artesanal</option>
+                          <option value="X-Tudo Artesanal">X-Tudo Artesanal</option>
+                           <option value="MaMg-Tudo Artesanal">MaMg-Tudo Artesanal</option>
+                            <option value="Hambúrguer Picanha">Hambúrguer Picanha</option>
+                             <option value="X-Salada Picanha">X-Salada Picanha</option>
+                              <option value="X-EGG Picanha">X-EGG Picanha</option>
+                               <option value="X-Bacon Picanha">X-Bacon Picanha</option>
+                                <option value="X-Tudo Picanha">X-Tudo Picanha</option>
+                                 <option value="MaMg-Tudo Picanha"></option>
+                                  <option value="Cachorro-Quente-Tradicional">Cachorro-Quente-Tradicional</option>
+                                  <option value="Cachorro-Quente-Duplo">Cachorro-Quente-Duplo</option>
+                                  <option value="Cachorro-Quente-Triplo">Cachorro-Quente-Triplo</option>
+            </select>
+
+            <label for="quantidade">Quantidade</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" value="1" required>
+
+            <label for="Refrigerantes">Escolha o Refrigerante:</label>
+            <select id="refrigerante" name="refrigerante" required>
+               <option value="">Selecione</option>
+               <option value="Coca-Cola 600ml">Coca-Cola 600ml</option>
+               <option value="Fanta Uva 600ml">Fanta Uva 600ml</option>
+               <option value="Fanta Laranja 600ml">Fanta Laranja 600ml</option>
+               <option value="Coca-Cola 1L">Coca-Cola 1L</option>
+               <option value="Guaraná Antarctica 1L">Guaraná Antarctica 1L</option>
+               <option value="Coca-Cola 2L">Coca-Cola 2L</option>
+               <option value="Fanta Uva 2L">Fanta Uva 2L</option>
+               <option value="Fanta Laranja 2L">Fanta Laranja 2L</option>
+               <option value="Guaraná Antarctica 2L">Guaraná Antarctica 2L</option>
+            </select>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" value="1" required>
+
+            <button type="submit">Enviar Pedido</button>
+         </form>
+ </section>
+  
+     </main>
+
+     <footer>
+      <p>&copy; 2025 MaMg Lanches</p>
+     </footer>
+
+     <script src="script.js"></script>
 </body>
 </html>
