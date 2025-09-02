@@ -8,17 +8,13 @@
 </head>
 <body> 
    <header>
-      <h1>MaMg Lanches</h1>
-      <nav>
-         <a href="#menu">Cardápio</a>
-         <a href="#menu">Contato</a>
-      </nav>
+      <h1 class="fixo">MaMg Lanches</h1>
    </header>
      <main>
       <section id="menu" class="menu">
             <h2>Nosso Cardápio</h2>
              <div class="cardapio">
-                <h1>Hambúrguer Tradicionais</h1>
+                <h2 class="id">Hambúrguer Tradicionais</h2>
                 <div class="card">
                     <h3>Misto Quente</h3>
                     <p>Pão + Presunto + Musarela.</p>
@@ -68,7 +64,7 @@
                     <p>R$ 25,00</p>
                     <button onclick="fazerPedido('MaMg-Tudo')">Pedir</button>
                 </div>
-   <h1>Hambúrguer Artesanais</h1>
+   <h2 class="id">Hambúrguer Artesanais</h2>
                 <div class="card">
                     <h3>Hambúrguer Artesanal</h3>
                     <p>Pão + Bife Artesanal 150g + Alface + Tomate + Batata Palha.</p>
@@ -105,7 +101,7 @@
                     <p>R$ 27,00</p>
                     <button onclick="fazerPedido('MaMg-Tudo Artesanal')">Pedir</button>
                 </div>
-   <h1>Hambúrguer Picanha</h1>
+   <h2 class="id">Hambúrguer Picanha</h2>
                 <div class="card">
                     <h3>Hambúrguer Picanha</h3>
                     <p>Pão + Picanha 90g + Alface + Tomate + Batata Palha.</p>
@@ -142,7 +138,7 @@
                     <p>R$ 35,00</p>
                     <button onclick="fazerPedido('MaMg-Tudo Picanha')">Pedir</button>
                 </div>
-   <h1>Cachorro Quente</h1>
+   <h2 class="id">Cachorro Quente</h2>
    <div class="card">
                     <h3>Cachorro-Quente-Tradicional</h3>
                     <p>Pão + Salsicha + Milho + Ovo de Codorna + Queijo Ralado + Batata Palha</p>
@@ -163,56 +159,65 @@
                 </div>
 
   
-   <h1 class="destaque">Refrigerantes</h1>
+   <h2 class="id">Refrigerantes</h2>
     <div class="card">
+        <img src="imagens/coca 2l" alt="coca">
                     <h3>Coca-Cola 600ml</h3>
                     <p>Garrafa 600ml</p>
                     <p>R$ 8,00</p>
                     <button onclick="fazerPedido('Coca-Cola 600ml')">Pedir</button>
                 </div>
                  <div class="card">
+                    <img src="imagens/fanta uva 2l" alt="fanta uva">
                     <h3>Fanta Uva 600ml</h3>
                     <p>Garrafa 600ml</p>
                     <p>R$ 8,00</p>
                     <button onclick="fazerPedido('Fanta Uva 600ml')">Pedir</button>
                 </div>
                  <div class="card">
+                    <img src="imagens/fanta laranja 2l" alt="fanta laranja">
                     <h3>Fanta Laranja 600ml</h3>
                     <p>Garrafa 600ml</p>
                     <p>R$ 8,00</p>
                     <button onclick="fazerPedido('Fanta Laranja 600ml')">Pedir</button>
                 </div>
                  <div class="card">
+                    <img src="imagens/coca 2l" alt="coca">
                     <h3>Coca-Cola 1L</h3>
                     <p>Garrafa 1L</p>
                     <p>R$ 10,00</p>
-                    <button onclick="fazerPedido('Cachorro-Quente-Triplo')">Pedir</button>
+                    <button onclick="fazerPedido('Coca-Cola 1L')">Pedir</button>
                 </div>
                  <div class="card">
+                    <img src="imagens/guarana antartica 2l" alt="guarana antartica">
                     <h3>Guaraná Antarctica 1L</h3>
                     <p>Garrafa 1L</p>
                     <p>R$ 10,00</p>
                     <button onclick="fazerPedido('Guaraná Antarctica 1L')">Pedir</button>
                 </div>
                  <div class="card">
+                    <img src="imagens/coca 2l" alt="coca">
                     <h3>Coca-Cola 2L</h3>
                     <p>Garrafa 2L</p>
                     <p>R$ 14,00</p>
                     <button onclick="fazerPedido('Coca-Cola 2L')">Pedir</button>
                 </div>
                  <div class="card">
+                    <img src="imagens/fanta uva 2l" alt="fanta uva">
                     <h3>Fanta Uva 2L</h3>
                     <p>Garrafa 2L</p>
                     <p>R$ 14,00</p>
                     <button onclick="fazerPedido('Fanta Uva 2L')">Pedir</button>
                 </div>
                  <div class="card">
+                    <img src="imagens/fanta laranja 2l" alt="fanta laranja">
                     <h3>Fanta Laranja 2L</h3>
                     <p>Garrafa 2L</p>
                     <p>R$ 14,00</p>
                     <button onclick="fazerPedido('Fanta Laranja 2L')">Pedir</button>
                 </div>
                  <div class="card">
+                    <img src="imagens/guarana antartica 2l" alt="guarana antartica">
                     <h3>Guaraná Antarctica 2L</h3>
                     <p>Garrafa 2L</p>
                     <p>R$ 14,00</p>
@@ -222,7 +227,7 @@
       </section>
       <section id="contato" class="contato">
          <h2>Contato</h2>
-         <p>Telefone:(32)98835-3163</p>
+         <img src="icons8-whatsapp.gif" alt="whatssap"><p>Telefone:(32)98835-3163</p>
       </section>
       <section id="pedido" class="pedido">
          <h2>Faça seu pedido</h2>
@@ -235,7 +240,7 @@
 
             <label for="hamburguer">Escolha o Hambúrguer:</label>
             <select id="hamburguer" name="hamburguer" required>
-               <option value="">Selecione</option>
+               <option value="">--Selecione--</option>
                <option value="Misto Quente">Misto Quente</option>
                 <option value="hamburguer">Hambúrguer</option>
                  <option value="X-Salada">X-Salada</option>
@@ -255,18 +260,18 @@
                               <option value="X-EGG Picanha">X-EGG Picanha</option>
                                <option value="X-Bacon Picanha">X-Bacon Picanha</option>
                                 <option value="X-Tudo Picanha">X-Tudo Picanha</option>
-                                 <option value="MaMg-Tudo Picanha"></option>
+                                 <option value="MaMg-Tudo Picanha">MaMg-Tudo Picanha</option>
                                   <option value="Cachorro-Quente-Tradicional">Cachorro-Quente-Tradicional</option>
                                   <option value="Cachorro-Quente-Duplo">Cachorro-Quente-Duplo</option>
                                   <option value="Cachorro-Quente-Triplo">Cachorro-Quente-Triplo</option>
             </select>
 
-            <label for="quantidade">Quantidade</label>
-            <input type="number" id="quantidade" name="quantidade" min="1" value="1" required>
+            <label for="quantidadeHambuerguer">Quantidade de Hambúrguer:</label>
+            <input type="number" id="quantidadeHamburguer" name="quantidadeHamburguer" min="1" value="1" required>
 
             <label for="Refrigerantes">Escolha o Refrigerante:</label>
             <select id="refrigerante" name="refrigerante" required>
-               <option value="">Selecione</option>
+               <option value="">--Selecione--</option>
                <option value="Coca-Cola 600ml">Coca-Cola 600ml</option>
                <option value="Fanta Uva 600ml">Fanta Uva 600ml</option>
                <option value="Fanta Laranja 600ml">Fanta Laranja 600ml</option>
@@ -278,8 +283,8 @@
                <option value="Guaraná Antarctica 2L">Guaraná Antarctica 2L</option>
             </select>
 
-            <label for="quantidade">Quantidade:</label>
-            <input type="number" id="quantidade" name="quantidade" min="1" value="1" required>
+            <label for="quantidadeRefrigerante">Quantidade de Refrigerante:</label>
+            <input type="number" id="quantidadeRefrigerante" name="quantidadeRefrigerante" min="1" value="1" required>
 
             <button type="submit">Enviar Pedido</button>
          </form>
