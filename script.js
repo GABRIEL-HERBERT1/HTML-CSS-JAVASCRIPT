@@ -1,47 +1,37 @@
-function fazerPedido(nomeHamburguer) {
-    alert(`Você pediu um hambúrguer ${nomeHamburguer}! Em breve ficará pronto!`);
+function fazerPedido(produto) {
+  alert(`Você escolheu: ${produto}`);
 }
 
-document.getElementById("form-pedido").addEventListener("submit", function(event) {
-    event.preventDefault();
+const form = document.getElementById('form-pedido');
 
-    const nome = document.getElementById("nome").value;
-    const endereco = document.getElementById("endereco").value;
-    const hamburguer = document.getElementById("hamburguer").value;
-    const quantidade = document.getElementById("quantidade").value;
+form.addEventListener('submit', function (e) {
+  e.preventDefault(); // impede o envio automático do formulário
 
-    if (!nome || !endereco || !hamburguer || !quantidade) {
-        alert("Por favor, preencha todos os campos.");
-        return;
-    }
+  const nome = document.getElementById('nome').value;
+  const endereco = document.getElementById('endereco').value;
+  const hamburguer = document.getElementById('hamburguer').value;
+  const quantidadeHamburguer = document.getElementById('quantidadeHamburguer').value;
+  const refrigerante = document.getElementById('refrigerante').value;
+  const quantidadeRefrigerante = document.getElementById('quantidadeRefrigerante').value;
 
-    // Formata a mensagem
-    const mensagem = `Olá! Gostaria de fazer um pedido:\n\n🍔 *Hambúrguer:* ${hamburguer}\n📦 *Quantidade:* ${quantidade}\n👤 *Nome:* ${nome}\n🏠 *Endereço:* ${endereco}`;
+  // Mensagem formatada
+  const mensagem = `Olá! Gostaria de fazer um pedido:
+  
+🍔 *Hambúrguer*: ${hamburguer} (x${quantidadeHamburguer})
+🥤 *Refrigerante*: ${refrigerante} (x${quantidadeRefrigerante})
 
-    // Número de WhatsApp da hamburgueria (ex: Brasil +55 11 91234-5678)
-    const numero = "5532988353163"; // Substitua pelo seu número real
+👤 *Nome*: ${nome}
+🏠 *Endereço*: ${endereco}`;
 
-    // Cria a URL do WhatsApp com a mensagem codificada
-    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+  // Codifica a mensagem para usar em URL
+  const mensagemCodificada = encodeURIComponent(mensagem);
 
-    // Abre o WhatsApp
-    window.open(url, "_blank");
-});
+  // Número de telefone com DDD (exemplo: 32 = Juiz de Fora / MG)
+  const telefone = "5532988353163";
 
-    event.preventDefault(); // Evita recarregar a página
+  // URL do WhatsApp
+  const url = `https://wa.me/${telefone}?text=${mensagemCodificada}`;
 
-    const nome = document.getElementById("nome").value;
-    const endereco = document.getElementById("endereco").value;
-    const hamburguer = document.getElementById("hamburguer").value;
-    const quantidade = document.getElementById("quantidade").value;
-
-    if (!nome || !endereco || !hamburguer || !quantidade) {
-        alert("Por favor, preencha todos os campos.");
-        return;
-    }
-
-    alert(`Pedido confirmado!\n\nCliente: ${nome}\nEndereço: ${endereco}\nHambúrguer: ${hamburguer}\nQuantidade: ${quantidade}\n\nObrigado por pedir conosco!`);
-    
-    // Aqui você poderia enviar os dados para um servidor se quiser
-    this.reset(); // Limpa o formulário após envio
+  // Abre o WhatsApp em uma nova aba
+  window.open(url, "_blank");
 });
