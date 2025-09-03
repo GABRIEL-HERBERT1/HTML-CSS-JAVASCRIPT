@@ -306,6 +306,22 @@
 
             <label for="quantidadeRefrigerante">Quantidade de Refrigerante:</label>
             <input type="number" id="quantidadeRefrigerante" name="quantidadeRefrigerante" min="1" value="1" required>
+            <label for="pagamento">Forma de Pagamento:</label>
+<select id="pagamento" name="pagamento" required>
+   <option value="">--Selecione--</option>
+   <option value="Pix">Pix</option>
+   <option value="Dinheiro">Dinheiro</option>
+   <option value="Cartão">Cartão</option>
+</select>
+
+<label for="entrega">Taxa de Entrega:</label>
+<select id="entrega" name="entrega" required>
+   <option value="0">Retirada (R$ 0,00)</option>
+   <option value="5">Bairro A (R$ 5,00)</option>
+   <option value="7">Bairro B (R$ 7,00)</option>
+   <option value="10">Outra Cidade (R$ 10,00)</option>
+</select>
+
 
             <button type="submit">Enviar Pedido</button>
          </form>
