@@ -15,6 +15,27 @@
   margin: auto;
 }
 
+div.container{
+    display: flex;
+
+}
+
+div.itemprincipal{
+    background-color: #8B0000;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    margin: auto;
+    flex: auto;
+
+}
+
+div.item{
+    text-align: center;
+    margin-bottom: 50px;
+    flex: auto;
+}
+
 body{
     font-family: Arial, sans-serif;
     /*background-image: url("hamburguergourmet-fb.jpg");*/
